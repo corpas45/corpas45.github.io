@@ -3,25 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pong Game</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #222;
-        }
-        canvas {
-            border: 2px solid white;
-            background-color: #000;
-        }
-    </style>
+    <title>Tienda de Muebles</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="pongCanvas" width="800" height="400"></canvas>
-    <script src="pong.js"></script>
+    <header>
+        <h1>Tienda de Muebles</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Productos Disponibles</h2>
+        <div class="producto">
+            <img src="sofa_26478849.jpg" alt="Sofá">
+            <h3>Sofá Moderno</h3>
+            <p>Un sofá cómodo y moderno para tu sala.</p>
+            <p class="precio">$499.99</p>
+            <button onclick="agregarAlCarrito('Sofá Moderno', 499.99)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="UX-0540R.jpg" alt="Mesa">
+            <h3>Mesa de Comedor</h3>
+            <p>Una mesa elegante para tu comedor.</p>
+            <p class="precio">$299.99</p>
+            <button onclick="agregarAlCarrito('Mesa de Comedor', 299.99)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="descarga (38).jpg" alt="Silla">
+            <h3>Silla de Oficina</h3>
+            <p>Silla ergonómica para oficina.</p>
+            <p class="precio">$149.99</p>
+            <button onclick="agregarAlCarrito('Silla de Oficina', 149.99)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Tu Carrito</h2>
+        <ul id="carrito-lista"></ul>
+        <p id="total">Total: $0.00</p>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Muebles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
