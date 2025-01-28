@@ -3,58 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Muebles</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            background-color: #f1f1f1;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Tienda de Muebles</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Daniel fernandez corpas</h1>
+        <p>Camarero</p>
     </header>
+    
+    <div class="container">
+        <section>
+            <h2>Datos Personales</h2>
+            <ul><img src="descarga (60).jpg" alt="Foto de messi" class="profile-img">
+                <li><strong>Nombre:</strong> daniel fernandez corpas</li>
+                <li><strong>Dirección:</strong> Calle jorgue manrique 11 escalona/toledo, España</li>
+                <li><strong>Teléfono:</strong> 663470892</li>
+                <li><strong>Email:</strong> danielfer1309@gmail.com</li>
+                <li><strong>Fecha de Nacimiento:</strong> 13 de septiembre de 2006</li>
+            </ul>
+        </section>
 
-    <section id="productos">
-        <h2>Productos Disponibles</h2>
-        <div class="producto">
-            <img src="sofa_26478849.jpg" alt="Sofá">
-            <h3>Sofá Moderno</h3>
-            <p>Un sofá cómodo y moderno para tu sala.</p>
-            <p class="precio">$499.99</p>
-            <button onclick="agregarAlCarrito('Sofá Moderno', 499.99)">Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="UX-0540R.jpg" alt="Mesa">
-            <h3>Mesa de Comedor</h3>
-            <p>Una mesa elegante para tu comedor.</p>
-            <p class="precio">$299.99</p>
-            <button onclick="agregarAlCarrito('Mesa de Comedor', 299.99)">Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="descarga (38).jpg" alt="Silla">
-            <h3>Silla de Oficina</h3>
-            <p>Silla ergonómica para oficina.</p>
-            <p class="precio">$149.99</p>
-            <button onclick="agregarAlCarrito('Silla de Oficina', 149.99)">Agregar al carrito</button>
-        </div>
-    </section>
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li><strong>camarero principiante- bar: las gorroneras</strong> (junio 2024 - agosto 2024)</li>
+                <li><strong></strong> </li>
+            </ul>
+        </section>
 
-    <section id="carrito">
-        <h2>Tu Carrito</h2>
-        <ul id="carrito-lista"></ul>
-        <p id="total">Total: $0.00</p>
-        <button onclick="vaciarCarrito()">Vaciar carrito</button>
-    </section>
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li><strong>ciclo formativo de grado basico informatica de oficina</strong> - ies lazarillo de tormes(2020 - 2025)</li>
+                <li><strong></strong> </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, , JavaScript</li>
+                <li></li>
+                <li>Git, GitHub</li>
+                <li>Lenguajes de Programación: Python, Java</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español - Nativo</li>
+                <li>Inglés - Intermedio</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Tienda de Muebles. Todos los derechos reservados.</p>
+        <p>&copy; 2025 daniel fernandez corpas</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
